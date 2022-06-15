@@ -1,7 +1,3 @@
-const button = document.querySelector("#button");
-
-button.addEventListener("click", calcBMI(weight, height));
-
 function calcBMI() {
   const weight = document.querySelector("#weight").value;
   const height = document.querySelector("#height").value;

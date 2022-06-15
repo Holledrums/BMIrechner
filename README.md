@@ -1,37 +1,72 @@
 # project-BMI
 
-## Aufgabenstellung - Teil 1
-Schreibe eine HTML Seite für einen BMI Rechner.
+**[Test this app yourself](https://holledrums.github.io/BMIrechner/)**
 
-Die HTML Seite muss erklären, worum es sich beim BMI handelt und wie er sich berechnet.
+---
 
-Anschließend muss die HTML Seite zwei Eingabefelder für das Gewicht und die Höhe haben und einen Button zur Berechnung.
+![blanco page](./image/blanco.png)
+![calculated BMI](./image/calcBMI.png)
 
-Optional kannst du eine Tabelle erstellen, die den Normalbereich nach Altersgruppe anzeigt.
+#### Navigation
 
-Quelle: https://bmirechner.net/bmi-tabelle
+- About Project
 
-## Aufgabenstellung - Teil 2
-Verwende CSS oder Sass, um deiner Seite Style zu verleihen.
+  - _Description_
 
-Beim Hovern über die Eingabefelder und den Button, soll die Farbe der Elemente verändert werden.
+- How to use this Project
 
-Achte auf guten Kontrast bei der Farbwahl.
+  - _Description_
 
-Verleihe deiner Seite einen Hintergrund und style optional die Tabelle.
+- Contact
+  - _Mail_
+  - _GitHub_
+  - _LinkedIn_
+- Used Tools
+  - _Fonts_
+  - _Design_
+  - _Icons_
+  - _Colors_
 
-## Aufgabenstellung - Teil 3
-Erstelle eine neue JavaScript Datei und schreibe eine Funktion für die Berechnung des BMI.
+---
 
-Sie soll über getElementById() die eingegebene Größe und Gewicht laden.
+### About Project
 
-Anschließend soll sie den BMI berechnen und über .innerHTML das errechnete Ergebnis in die HTML laden.
+Schreibe eine HTML Seite für einen BMI Rechner. Mit Infos, worum es sich bei einem BMI handelt und wie er sich berechnet.
 
-Die Funktion wird über das onClick-Event des Buttons ausgeführt.
+Die HTML Seite hat zwei Eingabefelder für das Gewicht und die Größe und einen Button zur Berechnung.
 
-## Aufgabenstellung - Teil 4
-Teste deine Webseite.
+### How to use this Project
 
-Publiziere sie anschließend mit GitHub Pages.
+Gib dein Gewicht in 'kg' und deine Körpergröße in 'cm' an und lass dir dein BMI berechnen, anhand der nachstehenden Tabelle kannst du sehen ob du ggf. Übergewicht hast.
 
-Viel Spaß!
+##### Developed With
+
+- [x] _HTML5_
+- [x] _CSS3_
+- [ ] _SASS_
+- [ ] _SCSS_
+- [x] _JavaScript_
+- [ ] _React_
+- [ ] _Bootstrap_
+- [x] _npm_
+- [ ] _..._
+
+---
+
+### Contact
+
+Mail: <holgeraliusklose@gmail.com><br>
+GitHub: [Holledrums](https://github.com/holledrums)<br>
+LinkedIn: [Holger Klose](https://www.linkedin.com/in/holger-klose-240831147/)
+
+---
+
+### Used Tools
+
+- [npm](https://www.npmjs.com/)
+- [Google Fonts](https://fonts.google.com/)
+- [Visual Studio Code](https://code.visualstudio.com/)
+
+---
+
+Made with ❤️ by me
