@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>BMI Rechner</title>
+  </head>
+  <body>
+    <h1>BMI Rechner</h1>
+    <form action="#">
+      <input
+        id="weight"
+        type="number"
+        min="20"
+        max="300"
+        value=""
+        placeholder="kg"
+        required
+      />
+      <input
+        id="height"
+        type="number"
+        min="50"
+        max="250"
+        value=""
+        placeholder="cm"
+        required
+      />
+      <button id="button" type="submit" onclick="calcBMI()">berechnen</button>
+    </form>
+
+    <div id="bmi">
+      <p>dein BMI beträgt</p>
+      <p id="yourBmi"></p>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>dein Alter</th>
+          <th>20-29J</th>
+          <th>30-39J</th>
+          <th>40-49J</th>
+          <th>50-59J</th>
+          <th>ab 60J</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Starkes Untergewicht</th>
+          <td>&lt 15</td>
+          <td>&lt 16</td>
+          <td>&lt 17</td>
+          <td>&lt 18</td>
+          <td>&lt 19</td>
+        </tr>
+        <tr>
+          <th>Moderates Untergewicht</th>
+          <td>15 - 16</td>
+          <td>16 - 17</td>
+          <td>17 - 18</td>
+          <td>18 - 19</td>
+          <td>19 - 20</td>
+        </tr>
+        <tr>
+          <th>Leichtes Untergewicht</th>
+          <td>16 - 17.5</td>
+          <td>17 - 18.5</td>
+          <td>18 - 19.5</td>
+          <td>19 - 20.5</td>
+          <td>20 - 21.5</td>
+        </tr>
+        <tr>
+          <th>Normalgewicht</th>
+          <td>17.5 - 24</td>
+          <td>18.5 - 25</td>
+          <td>19.5 - 26</td>
+          <td>20.5 - 27</td>
+          <td>21.5 - 28</td>
+        </tr>
+        <tr>
+          <th>Beginnende Fettleibigkeit</th>
+          <td>24 - 29</td>
+          <td>25 - 30</td>
+          <td>26 - 31</td>
+          <td>27 - 32</td>
+          <td>28 - 33</td>
+        </tr>
+        <tr>
+          <th>Adipositas Grad 1</th>
+          <td>29 - 34</td>
+          <td>30 - 35</td>
+          <td>31 - 36</td>
+          <td>32 - 37</td>
+          <td>33 - 38</td>
+        </tr>
+        <tr>
+          <th>Adipositas Grad 2</th>
+          <td>34 - 39</td>
+          <td>35 - 40</td>
+          <td>36 - 41</td>
+          <td>37 - 42</td>
+          <td>38 - 43</td>
+        </tr>
+        <tr>
+          <th>Adipositas Grad 3</th>
+          <td>&gt 39</td>
+          <td>&gt 40</td>
+          <td>&gt 41</td>
+          <td>&gt 42</td>
+          <td>&gt 43</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div id="qa">
+      <h2>Was ist der BMI?</h2>
+      <p>
+        Der BMI (Body Mass Index) ist ein Maß für die Bewertung des
+        Körpergewichts, indem er das Gewicht in Relation zu der Körpergröße
+        setzt. Aufgrund der einfachen Messung ist die Berechnung des BMI das am
+        häufigsten verwendete Diagnoseverfahren zur Einordnung der Körperlast.
+        Anhand des ermittelten BMI-Werts lässt sich schnell aussagen, ob eine
+        Person Normalgewicht, Übergewicht oder Untergewicht hat.
+      </p>
+      <h3>Die Schwachstellen des BMI-Rechners</h3>
+      <p>
+        Wie jede Messgröße hat auch der BMI seine Schwachstellen und sollte nur
+        im Kontext mit anderen Werten beurteilt werden. Problematisch beim BMI
+        ist, dass der Körperfettanteil, der Körperbau und die Muskelmasse im
+        Vergleich zum Körperfett nicht berücksichtigt werden. Daher ist der
+        Wert, beispielsweise für gut trainierte Sportler, eher wenig
+        aussagekräftig. Ähnliche Schwierigkeiten bestehen bei den ethnischen
+        Unterschieden sowie bei besonders kleinen oder großen Personen.
+      </p>
+      <p>
+        Trotzdem stellt der Body-Mass-Index eine simple und schnelle Beurteilung
+        des Körpergewichts dar und wird zur Einschätzung gewichtsspezifischer
+        Gesundheitsprobleme empfohlen.
+      </p>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
