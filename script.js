@@ -1,20 +1,25 @@
 function calcBMI() {
   const weight = document.querySelector("#weight").value;
   const height = document.querySelector("#height").value;
-  const calcBmi = weight / (height / 100) ** 2;
-
-  printBMI(calcBmi);
+  const calcBmi = Math.floor(weight / (height / 100) ** 2);
+  // Item Anlegen
+  const userBmi = localStorage.getItem("YourBMI");
+  localStorage.setItem("YourBMI", calcBmi);
+  printBMI(calcBmi, userBmi);
 }
 
-function printBMI(calcBmi) {
+function printBMI(calcBmi, userBmi) {
   const BMI = document.querySelector("#bmi");
   const yourBMI = document.querySelector("#yourBmi");
-  console.log(typeof calcBmi);
+  // Item abfragen
+  BMI.style.display = "block";
+  console.log(typeof calcBmi, userBmi);
   if (!isNaN(calcBmi)) {
-    BMI.style.display = "block";
-    yourBMI.textContent = Math.floor(calcBmi);
+    yourBMI.textContent = calcBmi;
+    if (calcBmi != userBmi) {
+      yourBMI.textContent = `last BMI: ${calcBmi} | new BMI: ${userBmi}`;
+    }
   } else {
-    BMI.style.display = "block";
     yourBMI.textContent = "Fehler! Bitte gib deine Daten ein :)";
   }
 }
